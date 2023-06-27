@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <h1>Cadastre-se</h1>
+    <form>
+      <label for="nome">Nome completo:</label>
+      <input
+        id="nome"
+        type="text"
+        name="nome"
+        maxlength="200"
+        required
+        placeholder="Digite seu nome completo..."
+      />
+
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        placeholder="exemplo@exe.com"
+      />
+
+      <br />
+      <br />
+
+      <label for="password">Senha:</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        required
+        placeholder="Senha..."
+      />
+
+      <br />
+      <br />
+
+      <label for="uf">UF:</label>
+      <select id="uf" name="uf" required>
+        <option value="selecione" selected disabled>Selecione um estado</option>
+        <option value="sp">SP</option>
+        <option value="se">SE</option>
+        <option value="mg">MG</option>
+        <option value="rj">RJ</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="cidade">Cidade:</label>
+      <input
+        id="cidade"
+        type="text"
+        name="cidade"
+        required
+        placeholder="Digite sua cidade..."
+      />
+
+      <br />
+      <br />
+
+      <label for="rua">Rua:</label>
+      <input
+        id="rua"
+        type="text"
+        name="rua"
+        required
+        placeholder="Digite sua rua..."
+      />
+
+      <br />
+      <br />
+
+      <label for="numero">Numero:</label>
+      <input
+        id="numero"
+        placeholder="Digite seu numero..."
+        type="text"
+        name="numero"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="CEP">CEP:</label>
+      <input
+        id="CEP"
+        type="text"
+        pattern="[0-9]{5}-[0-9]{3}"
+        title="Digite um CEP válido"
+        required
+        placeholder="11111-111"
+      />
+
+      <br />
+      <br />
+
+      <label for="bio">Bio:</label> <br />
+      <textarea
+        id="bio"
+        name="bio"
+        cols="30"
+        rows="10"
+        placeholder="Digite sua bio..."
+        required
+      ></textarea>
+
+      <br />
+      <br />
+
+      Área de atuação:
+      <br />
+
+      <label for="fullstack">Full-stack</label>
+      <input
+        id="fullstack"
+        type="radio"
+        name="area"
+        value="Full-stack"
+        required
+      />
+
+      <label for="cloud">Cloud</label>
+      <input id="cloud" type="radio" name="area" value="Cloud" required />
+
+      <label for="ambos">Ambos</label>
+      <input id="ambos" type="radio" name="area" value="Ambos" required />
+
+      <br /><br />
+
+      <input type="reset" value="Limpar campos" />
+      <input type="submit" value="Cadastrar" />
+    </form>
+    <p>Já possui uma conta? Faça <a href="./login.html">login</a></p>
+  </body>
+</html>
